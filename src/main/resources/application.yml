@@ -43,7 +43,10 @@ spring:
                 reset-enable: false
                 login-username: druid
                 login-password: druid
-
+     redis:
+       host: 120.79.23.207
+       port: 16379
+       timeout: 5000
 
 mybatis-plus:
         # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml

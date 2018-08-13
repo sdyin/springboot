@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * <p>
  *  前端控制器
@@ -32,7 +34,7 @@ public class UserController {
   @ApiOperation(value = "根据id查询用户",notes = "根据id查询用户")
    public User queryUser(@RequestParam("id") Long id){
      //测试redis
-     //redisDao.set("sdyin","sdyin");
+     redisDao.setEx("sdyin","sdyin",3, TimeUnit.MINUTES);
      return userService.queryUser(id);
    }
 }

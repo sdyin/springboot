@@ -1,6 +1,7 @@
 package com.sdyin.boot.controller;
 
 
+import com.sdyin.boot.common.RedisDao;
 import com.sdyin.boot.model.User;
 import com.sdyin.boot.service.IUserService;
 import com.sun.org.apache.xpath.internal.operations.Bool;
@@ -24,10 +25,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
    @Autowired
    private IUserService userService;
+   @Autowired
+   private RedisDao redisDao;
 
   @GetMapping(value = "/v1/query_user")
   @ApiOperation(value = "根据id查询用户",notes = "根据id查询用户")
    public User queryUser(@RequestParam("id") Long id){
+     //测试redis
+     //redisDao.set("sdyin","sdyin");
      return userService.queryUser(id);
    }
 }

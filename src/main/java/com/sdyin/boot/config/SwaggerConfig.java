@@ -21,7 +21,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.iboxpay.nf"))
+                .apis(RequestHandlerSelectors.basePackage("com.sdyin.boot"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -29,7 +29,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("RESTful APIs")
                 .description("用户中心API接口")
-                .termsOfServiceUrl("http://www.iboxpay.com/")
+                .termsOfServiceUrl("http://www.sdyin.com/")
                 .version("1.0")
                 .build();
     }

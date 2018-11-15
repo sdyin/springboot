@@ -19,4 +19,6 @@ public interface IUserService extends IService<User> {
    * @return
    */
   User queryUser(Long id);
+
+  void insertUser();
 }

@@ -4,7 +4,6 @@ package com.sdyin.boot.controller;
 import com.sdyin.boot.common.RedisDao;
 import com.sdyin.boot.model.User;
 import com.sdyin.boot.service.IUserService;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,6 +35,11 @@ public class UserController {
      //测试redis
      redisDao.setEx("sdyin","sdyin",3, TimeUnit.MINUTES);
      return userService.queryUser(id);
+   }
+
+   @GetMapping(value = "/test")
+   public void test(){
+     userService.insertUser();
    }
 }
 

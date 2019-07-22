@@ -1,7 +1,7 @@
 package com.sdyin.boot.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.sdyin.boot.model.User;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
  * <p>

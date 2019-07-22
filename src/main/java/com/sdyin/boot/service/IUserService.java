@@ -1,7 +1,7 @@
 package com.sdyin.boot.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.sdyin.boot.model.User;
-import com.baomidou.mybatisplus.service.IService;
 
 /**
  * <p>

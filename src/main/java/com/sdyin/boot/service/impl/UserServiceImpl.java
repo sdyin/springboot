@@ -1,6 +1,6 @@
 package com.sdyin.boot.service.impl;
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.sdyin.boot.mapper.UserMapper;
 import com.sdyin.boot.model.User;
 import com.sdyin.boot.service.IUserService;

@@ -33,7 +33,7 @@ public class UserController {
   @ApiOperation(value = "根据id查询用户",notes = "根据id查询用户")
    public User queryUser(@RequestParam("id") Long id){
      //测试redis
-     redisDao.setEx("sdyin","sdyin",3, TimeUnit.MINUTES);
+     //redisDao.setEx("sdyin","sdyin",3, TimeUnit.MINUTES);
      return userService.queryUser(id);
    }
 

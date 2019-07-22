@@ -8,7 +8,7 @@ spring:
         username: root
         password: root
         druid:
-            url: jdbc:mysql://120.79.23.207:3306/springboot?characterEncoding=utf8&useSSL=false
+            url: jdbc:mysql://127.0.0.1:3306/springboot?characterEncoding=utf8&useSSL=false
             username: root
             password: root
             initial-size: 2
@@ -75,4 +75,7 @@ mybatis-plus:
           jdbc-type-for-null: 'null'
           log-prefix: 'dao.'
 
+logging:
+  level:
+    com.sdyin.boot: DEBUG
 

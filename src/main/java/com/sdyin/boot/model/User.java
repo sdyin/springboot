@@ -1,8 +1,9 @@
 package com.sdyin.boot.model;
 
-import com.baomidou.mybatisplus.activerecord.Model;
-import com.baomidou.mybatisplus.annotations.TableName;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import java.io.Serializable;
 
 /**
@@ -17,7 +18,7 @@ import java.io.Serializable;
 public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
-
+    @TableId
     private Long id;
     private String name;
     private Integer age;

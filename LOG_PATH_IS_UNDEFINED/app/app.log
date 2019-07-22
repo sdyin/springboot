@@ -1,0 +1,6 @@
+[2019-07-22 16:33:39.279] [http-nio-8045-exec-1] DEBUG  [selectById] - ==>  Preparing: SELECT id,`name`,age FROM tbl_user WHERE id=? 
+[2019-07-22 16:33:39.307] [http-nio-8045-exec-1] DEBUG  [selectById] - ==> Parameters: 1(Long)
+[2019-07-22 16:33:39.321] [http-nio-8045-exec-1] DEBUG  [selectById] - <==      Total: 1
+[2019-07-22 16:45:26.372] [http-nio-8045-exec-1] DEBUG  [selectById] - ==>  Preparing: SELECT id,name,age FROM tbl_user WHERE id=? 
+[2019-07-22 16:45:26.391] [http-nio-8045-exec-1] DEBUG  [selectById] - ==> Parameters: 1(Long)
+[2019-07-22 16:45:26.423] [http-nio-8045-exec-1] DEBUG  [selectById] - <==      Total: 1

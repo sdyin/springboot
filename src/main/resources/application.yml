@@ -26,17 +26,8 @@ spring:
             min-evictable-idle-time-millis: 60000
             max-evictable-idle-time-millis: 60000
             filters: stat,wall
-            # WebStatFilter���ã�˵����ο�Druid Wiki������_����WebStatFilter
             web-stat-filter:
                 enabled: true
-                # url-pattern:
-                # exclusions:
-                # session-stat-enable: true
-                # session-stat-max-count:
-                # principal-session-name:
-                # principal-cookie-name:
-                # profile-enable:
-            # StatViewServlet���ã�˵����ο�Druid Wiki������_StatViewServlet����
             stat-view-servlet:
                 enabled: true
                 # url-pattern:

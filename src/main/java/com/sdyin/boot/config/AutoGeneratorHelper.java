@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
+import java.util.ResourceBundle;
+
 /**
  * @author liuye
  */
@@ -23,10 +25,14 @@ public class AutoGeneratorHelper {
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
 
+        //用来获取Mybatis-Plus.properties文件的配置信息
+        ResourceBundle rb = ResourceBundle.getBundle("Mybatis-Plus");
+
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        gc.setOutputDir("D:/order")
-                .setAuthor("liuye")
+        gc.setOutputDir(rb.getString("OutputDir"))
+                .setAuthor(rb.getString("author"))
+                .setBaseResultMap(true)
                 //是否打开输出目录
                 .setOpen(false)
                 //是否文件覆盖
@@ -36,10 +42,10 @@ public class AutoGeneratorHelper {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/springboot?useUnicode=true&useSSL=false&characterEncoding=utf8")
+        dsc.setUrl(rb.getString("url"))
                 .setDriverName("com.mysql.jdbc.Driver")
-                .setUsername("root")
-                .setPassword("root");
+                .setUsername(rb.getString("userName"))
+                .setPassword(rb.getString("passWord"));
 
         //策略配置
         StrategyConfig strategyConfig = new StrategyConfig();

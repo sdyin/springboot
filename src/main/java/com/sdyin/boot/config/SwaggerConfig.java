@@ -28,7 +28,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("RESTful APIs")
-                .description("用户中心API接口")
+                .description("API接口")
                 .termsOfServiceUrl("http://www.sdyin.com/")
                 .version("1.0")
                 .build();
